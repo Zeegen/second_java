@@ -25,9 +25,9 @@ public class Solution
         //напишите тут ваш код
         String[] parsing = s.split(" ");
         String upStr = "";
-        for (int i = 0; i < parsing.length; i++){
-            if (parsing[i].equals("")) upStr = upStr + " ";
-            else upStr = upStr + parsing[i].substring(0, 1).toUpperCase() + parsing[i].substring(1) + " ";
+        for (String pR : parsing){
+            if (pR.equals("")) upStr = upStr + " ";
+            else upStr = upStr + pR.substring(0, 1).toUpperCase() + pR.substring(1) + " ";
         }
         System.out.print(upStr);
     }

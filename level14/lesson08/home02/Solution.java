@@ -21,11 +21,7 @@ public class Solution {
 
     public static Drink getDeliciousDrink() {
 
-        return new Drink() {
-            public void taste() {
-                super.taste();
-            }
-        };
+        return new Wine();
     }
 
     public static Wine getWine() {
